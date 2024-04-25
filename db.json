@@ -1,0 +1,51 @@
+{
+  "users": [
+    
+    {
+      "id": 1,
+      "name": "Kunnikar Boonbunlu",
+      "email": "kunnikarboon@gmail.com",
+      "password": "123" 
+    },
+
+    {
+      "id": 2,
+      "name": "Amirhossein",
+      "email": "shayankarmand@gmail.com",
+      "password": "456"
+    },
+      
+      {
+        "id": 3,
+        "name": "Rafia",
+        "email": "likerafia@hotmail.com"
+      }
+  ],
+
+  "items" : [
+    {
+      "id": 1,
+      "title": "Fish",
+      "completed": false
+    },
+    
+    {
+      "id": 2,
+      "title": "Milk",
+      "completed": false
+    },
+    
+    {
+      "id": 3,
+      "title": "Bread",
+      "completed": false
+    },
+      
+      {
+        "id": 4,
+        "title": "Test server!",
+        "completed": false
+      }   
+  ]
+}
+
