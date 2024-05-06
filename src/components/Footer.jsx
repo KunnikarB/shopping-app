@@ -1,6 +1,6 @@
 import { MdAccountCircle } from "react-icons/md";
 import { MdCopyright } from "react-icons/md";
-
+//adding style
 const Footer = () => {
     return (
         <footer>
@@ -9,5 +9,5 @@ const Footer = () => {
         </footer>
     );
 }
-//export
+//export Footer
 export default Footer;

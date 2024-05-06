@@ -5,5 +5,5 @@ const Header = () => {
         </div>
     );
   }
-  
+  //founction for header
   export default Header;
