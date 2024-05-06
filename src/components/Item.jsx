@@ -5,6 +5,7 @@ import Card from "./Card";
 import Checkbox from "./Checkbox";
 import { MdShoppingCart } from "react-icons/md";
 
+//Items function it accepts three props: todo, handleDelete, and editTodo.
 
 const Item = ({todo, handleDelete, editTodo}) => {
   const [completed, setCompleted] = useState(todo.completed);
@@ -12,7 +13,7 @@ const Item = ({todo, handleDelete, editTodo}) => {
   const handleChange = (e) => {
     setCompleted(e.target.checked);
   }
-
+//style
   return (
     <Card >
       <div>
@@ -30,5 +31,5 @@ const Item = ({todo, handleDelete, editTodo}) => {
     </Card>
   );
 };
-
+//export item
 export default Item;
