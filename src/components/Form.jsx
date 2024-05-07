@@ -1,39 +1,45 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'; 
 import { useState } from 'react';
 import Card from './Card';
 import Button from './Button';
+import { GoTasklist } from "react-icons/go";
 
+// addTodo is a prop that is passed from App.js
 const Form = ({addTodo}) => { 
+// state to store the title of the todo
 const [title, setTitle] = useState("");
-
+// function to handle the submit event
 const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     const newTodo = {
         title,   
     }
-
+    // call the addTodo function and pass the newTodo as an argument
     addTodo(newTodo);
+    // reset the title to an empty string
     setTitle("");
-    
-
 };
 
 return (
-    <Card create={true}>
+    <Card >
+    
         <form onSubmit={handleSubmit}>
-         <div >
-            <h2>Add a list</h2>
+         <div className="card">
+            <h1><GoTasklist />Add a list</h1>
             <label>
               <input value={title} type="text" onChange={(e) => setTitle(e.target.value)} />
             </label>
             
-            <Button type="submit"></Button>
-           
+            <Button className="btn" type="submit"></Button>
           </div>
         </form>
     </Card>
 );
 }
+
+Form.propTypes = {
+    addTodo: PropTypes.func.isRequired,
+};
 
 export default Form;
