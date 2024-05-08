@@ -1,64 +1,80 @@
-// import { userState } from "react ";
-// import axios from "axios";
-// import { useNavigate } from "react-router-dom";
-import Card from "./Card";
-
+import "../index.css"
+import useLocalStorage from "use-local-storage";
+import { Toggle } from "./Toggle";
+import { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
-  // const [email, setEmail] = userState("");
-  // const [password, setPassword] = userState("");
-  
-  // const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  // const checkUser = (users) => {
-  //   const user = users.find((user) => user.email === email && user.password === password);
+  const navigate = useNavigate();
 
-  //   if (user.email === email && user.password === password) return user; 
-  // };
+  const checkUser = (users) => {
+    const user = users.find(
+      (user) => user.email === email && user.password === password);
+    if (user.email === email && user.password === password) {
+      return user;
+    } 
+  };
 
-  // const handleSubmit = async (e) => {
-  //   e.proventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   if (email === "" || password === "") {
-  //     alert("All fields are required");
-  //   }
+    if (email === "" || password === "") {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    const users = await axios.get("http://localhost:6001/users").then((res) => checkUser(res.data, email, password)).catch((err) => console.log(err));
     
-  //   const user = await axios.get("/users").then((res) => checkUser(res.data, email, password)).catch((err) => console.log(err));
-
-  //   if (user.email === email && user.password === password) {
-  //     navigate("/");
-
-      // Save user in local storage to keep user logged in after refreshing the page 
-      // localStorage.setItem("user", JSON.stringify(user.id));
-      
+    if (users) {
+      alert(` Welcome ${users.username} to iMovie!`);
+      navigate("/Imovie");
+      //set user id in local storage if user is found in the database and navigate to Imovie. We will use this id when we use private routes.
+      localStorage.setItem("user", JSON.stringify(users.id));
       // localStorage.removeItem("user");
-    // }
-  //   setEmail("");
-  //   setPassword("");
-  // };
+      
+    } else {
+      alert("User not found. Please register");
+      navigate("/Register");
+    }  
+    setEmail("");
+    setPassword("");  
+  }
+
+  const preference = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const [isDark, setIsDark] = useLocalStorage("isDark", preference);
 
   return (
-    <div className="container">
-      <Card>
-        <form>
-          <h1>Log in</h1>
-          <label>
-            <input type="email" placeholder="Email"  />
-            {/*value={email} onChange={(e) => setEmail(e.target.value)} */}
-          </label>
-          <label>
-            <input type="password" placeholder="Password"  />  
-            {/* value={password} onChange={(e) => setPassword(e.target.value)} */}        
-          </label>
-          <button className="btn" type="submit" >
-          {/* onClick={handleSubmit} */}
-            <p>Log in</p>     
-          </button>
-        </form>
-      </Card>
-    </div>  
+    <div className='App' data-theme={isDark ? "dark" : "light"} >
+          <Toggle 
+            isChecked={isDark}
+            handleChange={() => setIsDark(!isDark)}
+          />
+
+      <div className="container">
+        
+              <form>
+                <h1>Login</h1>
+                                     
+                      <input type="email"
+                          placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}  />
+                          
+                      <input type="password"
+                          placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}  />   
+                              
+                  
+                  <button className="btn" type="submit" onClick={handleSubmit} >
+                    <p>Submit</p>     
+                  </button>
+                </form>
+          
+      </div>  
+  </div>
   );
-}
+};
 
 export default Login;
