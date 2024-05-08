@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 uuidv4();
-import List from './List';
-import Form from './Form';
+// import List from './List';
+// import Form from './Form';
 import '../index.css';
 import { Toggle }  from "./Toggle";
 import useLocalStorage from "use-local-storage";    

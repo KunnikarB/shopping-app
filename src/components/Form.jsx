@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'; 
 import { useState } from 'react';
 
-import Button from './Button';
+// import Button from './Button';
 import { GoTasklist } from "react-icons/go";
 
 // addTodo is a prop that is passed from App.js
