@@ -1,6 +1,6 @@
-import "../index.css";
-import { Card } from './Card';
-import { useLocalStorage } from "use-local-storage";
+import "../index.css"
+import Card from "./Card";
+import useLocalStorage from "use-local-storage";
 import { Toggle } from "./Toggle";
 import { useState } from "react";
 import axios from "axios";
@@ -50,7 +50,6 @@ const Login = () => {
         const [isDark, setIsDark] = useLocalStorage("isDark", preference);
 
   return (
-
     <div className='App' data-theme={isDark ? "dark" : "light"} >
           <Toggle 
             isChecked={isDark}
@@ -73,10 +72,11 @@ const Login = () => {
                     <p>Submit</p>     
                   </button>
                 </form>
-        </Card> 
+          </Card>
       </div>  
   </div>
   );
 };
 
 export default Login;
+
