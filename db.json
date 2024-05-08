@@ -3,22 +3,23 @@
     
     {
       "id": 1,
-      "name": "Kunnikar Boonbunlu",
+      "username": "Kunnikar",
       "email": "kunnikarboon@gmail.com",
       "password": "123" 
     },
 
     {
       "id": 2,
-      "name": "Amirhossein",
+      "username": "Amirhossein",
       "email": "shayankarmand@gmail.com",
       "password": "456"
     },
       
       {
         "id": 3,
-        "name": "Rafia",
-        "email": "likerafia@hotmail.com"
+        "username": "Rafia",
+        "email": "likerafia@hotmail.com",
+        "password": "789"
       }
   ],
 

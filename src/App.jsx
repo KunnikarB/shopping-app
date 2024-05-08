@@ -1,13 +1,34 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import './index.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import Home from './components/Home';
+import "./iMovie.css";
+import Imovie from './components/Imovie';
+import Register from './components/Register';
+import Login from './components/Login';
+import PrivateRoute from './components/PrivateRoute';
+
+
 
 const App = () => {
+  
+      
   return (
-    <div>
-      <h1>Shopping App</h1>
-    </div>
+    
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="register" element={<Register />} />
+          <Route path="imovie" element={<Imovie />} />
+          <Route path="login" element={<Login />} />
+          <Route path="user" element={<PrivateRoute>
+            <Route path="imovie" element={<Imovie />} />
+          </PrivateRoute>} />
+          
+      </Routes> 
+        
+    </BrowserRouter>     
   );
-};
+}
 
 export default App;
