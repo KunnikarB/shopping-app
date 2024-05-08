@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import useLocalStorage from "use-local-storage";
 
+
  const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
