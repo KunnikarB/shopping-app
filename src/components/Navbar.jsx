@@ -1,6 +1,6 @@
 import "../index.css";
 import { Toggle }  from "./Toggle";
-import useLocalStorage from "use-local-storage";  
+import { useLocalStorage } from "use-local-storage";  
 import { MdShoppingCart } from "react-icons/md";  
 import { RiLoginCircleFill } from "react-icons/ri";
 import { FaRegistered } from "react-icons/fa";

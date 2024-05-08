@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'; 
 import { useState } from 'react';
-
-// import Button from './Button';
+import Card from './Card';
+import Button from './Button';
 import { GoTasklist } from "react-icons/go";
 
 // addTodo is a prop that is passed from App.js
@@ -22,7 +22,7 @@ const handleSubmit = (e) => {
 };
 
 return (
-    
+    <Card >
     
         <form onSubmit={handleSubmit}>
          <div className="card">
@@ -34,7 +34,7 @@ return (
             <Button className="btn" type="submit"></Button>
           </div>
         </form>
-    
+    </Card>
 );
 }
 
