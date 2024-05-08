@@ -1,4 +1,4 @@
-import "./Toggle.css";
+import "../toggle.css";
 import PropTypes from 'prop-types';
 
 export const Toggle = ({ isChecked, handleChange }) => {
