@@ -1,9 +1,8 @@
 import "../index.css"
-import useLocalStorage from "use-local-storage";
 import { Toggle } from "./Toggle";
 import axios from "axios";
 import { useState } from "react";
-
+import useLocalStorage from "use-local-storage";
 
  const Register = () => {
   const [username, setUsername] = useState("");
