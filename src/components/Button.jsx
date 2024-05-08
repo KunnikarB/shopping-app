@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import {BsPlus} from 'react-icons/bs';
-// reusable button component
+// reusable button 
 const Button = ({children, type, isDisabled}) => { 
   return (
     <button type={type} disabled={isDisabled} className="btn">
@@ -14,13 +14,11 @@ Button.defaultProps = {
   type: "button",
   isDisabled: false,
 };
-
 // propTypes is set to string and isDisabled is set to boolean
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.string,
   isDisabled: PropTypes.bool,
 };
-
-export default Button;
 // export
+export default Button;

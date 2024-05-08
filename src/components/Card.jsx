@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-// reusable card component 
+// reusable card  
 // dark and light mode 
 const Card = ({ children, reverse, }) => {
   return (
@@ -20,6 +20,5 @@ Card.defaultProps = {
     children: PropTypes.node.isRequired,
     reverse: PropTypes.bool,
   };
-  
-  export default Card;
   // export
+  export default Card;
