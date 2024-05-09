@@ -28,7 +28,7 @@ const Login = () => {
       alert("Please fill in all fields");
       return;
     }
-
+    
     const users = await axios.get("http://localhost:6001/users").then((res) => checkUser(res.data, email, password)).catch((err) => console.log(err));
     
     if (users) {
@@ -79,4 +79,3 @@ const Login = () => {
 };
 
 export default Login;
-

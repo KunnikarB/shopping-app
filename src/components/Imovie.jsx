@@ -7,6 +7,7 @@ import Logout from './Logout';
 import useLocalStorage from "use-local-storage";
 
 
+
 // Set up the API URL and fetch the data from the API using the search term as the title of the movie to search for.
 const Imovie = ({ movie }) => {
   const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=e6d2a710"

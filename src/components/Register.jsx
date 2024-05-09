@@ -1,4 +1,6 @@
 import "../index.css"
+import Card from "./Card";
+import useLocalStorage from "use-local-storage";
 import { Toggle } from "./Toggle";
 import useLocalStorage from "use-local-storage";
 import axios from "axios";
@@ -46,7 +48,7 @@ import { useState } from "react";
           />
 
       <div className="container">
-        
+        <Card>
               <form>
                 <h1>Register</h1>
                 
@@ -64,7 +66,7 @@ import { useState } from "react";
                     <p>Submit</p>   
                   </button>
                 </form>
-          
+          </Card>
       </div>  
   </div>
 );
