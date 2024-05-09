@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+// useNavigate hook to navigate to different pages.
   const navigate = useNavigate();
 
   const checkUser = (users) => {
@@ -28,9 +28,9 @@ const Login = () => {
       alert("Please fill in all fields");
       return;
     }
-    
+    // axios request to get all users from the database and check if the user is in the database by calling the checkUser function.
     const users = await axios.get("http://localhost:6001/users").then((res) => checkUser(res.data, email, password)).catch((err) => console.log(err));
-    
+    // if user is found in the database, alert the user and navigate to Imovie page.
     if (users) {
       alert(` Welcome ${users.username} to iMovie!`);
       navigate("/Imovie");
