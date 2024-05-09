@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Home from './components/Home';
+import Home from './components/Home';
 import "./iMovie.css";
 import Imovie from './components/Imovie';
 import Register from './components/Register';
