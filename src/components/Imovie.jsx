@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 import { Toggle }  from "./Toggle";
 import "../iMovie.css";
 import Logout from './Logout';
-import useLocalStorage from "user-local-storage";
+import useLocalStorage from "use-local-storage";
 
 
 // Set up the API URL and fetch the data from the API using the search term as the title of the movie to search for.
