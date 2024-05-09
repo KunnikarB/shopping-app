@@ -4,7 +4,7 @@ import useLocalStorage from "use-local-storage";
 import { Toggle } from "./Toggle";
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import  useNavigate  from "react-router-dom";
 
 
 const Login = () => {
