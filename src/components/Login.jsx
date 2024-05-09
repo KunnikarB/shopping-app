@@ -28,7 +28,7 @@ const Login = () => {
       alert("Please fill in all fields");
       return;
     }
-    
+    // axios request to get all users from the database and check if the user is in the database by calling the checkUser function.
     const users = await axios.get("http://localhost:6001/users").then((res) => checkUser(res.data, email, password)).catch((err) => console.log(err));
     
     if (users) {
