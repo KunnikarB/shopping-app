@@ -1,6 +1,6 @@
 import "../index.css"
 import Card from "./Card";
-import useLocalStorage from "use-local-storage";
+import useLocalStorage from "user-local-storage";
 import { Toggle } from "./Toggle";
 import { useState } from "react";
 import axios from "axios";
