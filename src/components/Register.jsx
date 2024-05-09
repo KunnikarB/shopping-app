@@ -2,7 +2,7 @@ import "../index.css"
 import { Toggle } from "./Toggle";
 import axios from "axios";
 import { useState } from "react";
-import useLocalStorage from "use-local-storage";
+import userLocalStorage from "user-local-storage";
 
 
  const Register = () => {
