@@ -4,7 +4,7 @@ import useLocalStorage from "use-local-storage";
 import { Toggle } from "./Toggle";
 import { useState } from "react";
 import axios from "axios";
-import  useNavigate  from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
@@ -28,7 +28,7 @@ const Login = () => {
       alert("Please fill in all fields");
       return;
     }
-
+    
     const users = await axios.get("http://localhost:6001/users").then((res) => checkUser(res.data, email, password)).catch((err) => console.log(err));
     
     if (users) {
@@ -79,4 +79,3 @@ const Login = () => {
 };
 
 export default Login;
-
