@@ -3,9 +3,8 @@ import {React, useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import { Toggle }  from "./Toggle";
 import "../iMovie.css";
-import Logout from './Logout';
+import Logout from "./Login";
 import useLocalStorage from "use-local-storage";
-
 
 
 // Set up the API URL and fetch the data from the API using the search term as the title of the movie to search for.
