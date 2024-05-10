@@ -3,10 +3,9 @@ import { useState } from "react";
 import { MdDeleteForever, MdEdit, } from "react-icons/md";
 import Card from "./Card";
 import Checkbox from "./Checkbox";
-import { MdShoppingCart } from "react-icons/md";
+import { FaShopify } from "react-icons/fa6";
 
 //Items function it accepts three props: todo, handleDelete, and editTodo.
-
 const Item = ({todo, handleDelete, editTodo}) => {
   const [completed, setCompleted] = useState(todo.completed);
 
@@ -16,18 +15,17 @@ const Item = ({todo, handleDelete, editTodo}) => {
 //style
   return (
     <Card >
-      <div>
-
-          <MdShoppingCart style={{ color: "#fff", marginRight: ".5rem",  }} />
+      <div className="todo-list" >
+        <div>
+          <FaShopify style={{ color: "magenta", marginRight: ".2rem",  }} />
           {todo.title}
         
-          <MdEdit style={{ color: "orange", marginRight: ".5rem", marginLeft: "2rem" }} onClick={() => editTodo(todo) }/>
-          
-          <MdDeleteForever style={{ color: "magenta", marginRight: ".5rem" }} onClick={() => handleDelete(todo.id) }/>
+          <MdDeleteForever style={{ color: "magenta", marginLeft: "2rem" }} onClick={() => handleDelete(todo.id) }/>
+        </div> 
 
-          <Checkbox 
+          <Checkbox className="check-label"
           label={completed === true ? "Completed" : "Shop?"} value={completed} onChange={handleChange} />
-      </div>    
+      </div>   
     </Card>
   );
 };
