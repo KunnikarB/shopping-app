@@ -10,26 +10,25 @@ iShopping is a shopping list app simplifies the grocery shopping experience by p
 
   <br>
   <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/e4b00219-efe7-42e9-9c6b-7660c295aedb">
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/d86f7613-ec75-466c-baee-9fbc4a04d9d1">
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/50e0022f-fc3b-4e2b-b146-3c35da52c2b7)">
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/a599dd11-ab1b-4343-a84e-b69801cdf73c">
- 
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/e7d09a22-d948-4240-8605-5b0f0aa5f40b">
-
  <br> <br>
 
 # Features
 
 - PropTypes method to ensure the correct datatype is passed for each prop.
 - Use localStorage to store data locally within a user's browser.
+- Use use-local-storage to toggle dark mode.
 - User authentication with email and password.
 - Private routes for authenticated users only.
-
-   <img scr="https://github.com/KunnikarB/shopping-app/assets/138579856/793239d4-2afe-4938-8dec-570fbf194efe">
+  
+<br><br>
+  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/d86f7613-ec75-466c-baee-9fbc4a04d9d1">
+  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/50e0022f-fc3b-4e2b-b146-3c35da52c2b7)">
+  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/a599dd11-ab1b-4343-a84e-b69801cdf73c">
+  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/e7d09a22-d948-4240-8605-5b0f0aa5f40b">
+<br><br>
 
 # Technologies Used
 
-- React.js for front-end development.
 - React.js for front-end development.
 - CSS for styling.
 
