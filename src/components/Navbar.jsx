@@ -5,26 +5,26 @@ import { MdShoppingCart } from "react-icons/md";
 import { RiLoginCircleFill } from "react-icons/ri";
 import { FaRegistered } from "react-icons/fa";
 
+// Navbar function navigate  Register page, Login page and Home page.
 export default function Navbar() {
   const preference = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const [isDark, setIsDark] = useLocalStorage("isDark", preference);
 
   return (
     
-   <div className='nav' data-theme={isDark ? "dark" : "light"} >
+   <div className='nav' data-theme=   {isDark ? "dark" : "light"} >
         <Toggle 
           isChecked={isDark}
           handleChange={() => setIsDark(!isDark)}
         />
-  <nav className="nav">
-      <a href="/" className="site-title">iShopping <MdShoppingCart style={{ color: "magenta", marginLeft: ".5rem"}} /> </a>
-     
-        <a href="/Register" className="site-title" >Register <FaRegistered style={{ color: "magenta", marginLeft: ".5rem" }} /></a>
+      <nav className="nav">
+        <a href="/" className="site-title">iShopping <MdShoppingCart style={{ color: "magenta", marginLeft: ".5rem"}} /> </a>
+      
+          <a href="/Register" className="site-title" >Register <FaRegistered style={{ color: "magenta", marginLeft: ".5rem" }} /></a>
 
-        <a href="/Login" className="site-title" >Login <RiLoginCircleFill style={{ color: "magenta", marginLeft: ".5rem" }} /></a>
-         
-    </nav>
+          <a href="/Login" className="site-title" >Login <RiLoginCircleFill style={{ color: "magenta", marginLeft: ".5rem" }} /></a>
+          
+      </nav>
     </div>
-
   ); 
 }
