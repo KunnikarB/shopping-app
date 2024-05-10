@@ -16,7 +16,7 @@ const Footer = () => {
       handleChange={() => setIsDark(!isDark)}
     />
         <footer >
-          <p><MdCopyright />Project by : <MdAccountCircle style={{ color: "orange"}} />Amirhossein <MdAccountCircle style={{ color: "orange"}} />Rafia <MdAccountCircle style={{ color: "orange"}} />Kunnikar</p>
+          <p><MdCopyright />Project by : <MdAccountCircle style={{ color: "magenta", marginLeft: "1em"}} />Amirhossein <MdAccountCircle style={{ color: "magenta", marginLeft: "1em"}} />Rafia <MdAccountCircle style={{ color: "magenta", marginLeft: "1em"}} />Kunnikar</p>
             
         </footer>
     </div>
