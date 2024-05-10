@@ -6,6 +6,7 @@ import Imovie from './components/Imovie';
 import Register from './components/Register';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
+import Footer from './components/Footer';
 
 
 
@@ -23,10 +24,9 @@ const App = () => {
           <Route path="login" element={<Login />} />
           <Route path="user" element={<PrivateRoute>
             <Route path="imovie" element={<Imovie />} />
-          </PrivateRoute>} />
-          
+          </PrivateRoute>} />       
       </Routes> 
-        
+      <Footer />   
     </BrowserRouter>     
   );
 }

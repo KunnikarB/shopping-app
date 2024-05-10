@@ -23,7 +23,6 @@ const handleSubmit = (e) => {
 
 return (
     <Card >
-    
         <form onSubmit={handleSubmit}>
          <div className="card">
             <h1><GoTasklist />Add a list</h1>

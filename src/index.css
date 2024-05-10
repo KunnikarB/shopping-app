@@ -80,7 +80,7 @@
 }
 
 .card {
-  padding: 1rem;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,11 +105,11 @@ body {
 .todo-list {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 30vh;
   justify-content: center;
   align-items: center;
   border-radius: 1em;
-  padding: 1rem;
+  padding: 1em;
   font-weight: 500;
 }
 
@@ -119,10 +119,12 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 500px;
-  padding: 1rem;
+  width: 40vw;
+  padding: 3em;
   border-radius: 2.5em;
   margin-bottom: 1.3rem;
   background-color: var(--background-color);
+
 }
 
 .todo-card input {
@@ -141,15 +143,13 @@ body {
   font-size: 2rem;
 }
 
-
 .list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: 1rem;
   list-style: none ;
   overflow: hidden;
-  
 }
 
 .list-item {
@@ -163,18 +163,16 @@ body {
   color: var(--foreground-color);
 }
 
+
 form input {
-  padding-left: 1rem;
+  padding-left: 2rem;
+  height: 2em;
 }
 
 label input {
   cursor: pointer;
-  padding: .5rem;
-  margin: 1rem;
+  padding: 2em;
 }
-
-
-
 
 .list-item input {
   border: none;
@@ -182,8 +180,7 @@ label input {
   background-color: var(--background-color);
   color: var(--secondary-text-color);
   font-size: 1.5rem;
-  margin-left: 2rem;
-  
+  margin-left: 2rem; 
 }
 
 
@@ -206,7 +203,6 @@ p {
   font-size: 1.3rem;
 }
 
-
 footer {
   margin: auto; 
   background-color: var(--foreground-color);
@@ -216,10 +212,9 @@ footer {
 
 footer p {
   color: var(--secondary-text-color);
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 500;
   letter-spacing: 1px;
-
 }
 
 .btn p {
