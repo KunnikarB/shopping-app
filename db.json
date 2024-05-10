@@ -17,14 +17,9 @@
       "username": "Rafia",
       "email": "likerafia@hotmail.com",
       "password": "789"
-    },
-    {
-      "id": "b1ae",
-      "username": "",
-      "email": "",
-      "password": ""
-    }
+    }  
   ],
+  
   "items": [
     {
       "id": 1,
