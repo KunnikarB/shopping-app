@@ -24,6 +24,7 @@ import { useState } from "react";
   const handleSubmit = async (e) => {
     e.preventDefault();
     const users = await axios.get("http://localhost:6001/users").then((res) => checkEmail(res.data, email ));
+
     
     if (users) {
       alert("Email already exists!");
@@ -53,13 +54,13 @@ import { useState } from "react";
                 <h1>Register</h1>
                 
                     <input type="text"
-                      placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)}  />   
+                      placeholder="Username" required value={username} onChange={(e) => setUsername(e.target.value)}  />   
                       
                       <input type="email"
-                          placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}  />
+                          placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)}  />
                           
                       <input type="password"
-                          placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}  />   
+                          placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)}  />   
                               
                   
                   <button className="btn" type="submit" onClick={handleSubmit}>
