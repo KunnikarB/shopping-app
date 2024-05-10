@@ -3,7 +3,7 @@ import {React, useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import { Toggle }  from "./Toggle";
 import "../iMovie.css";
-import Logout from "./Login";
+import Logout from "./Logout";
 import useLocalStorage from "use-local-storage";
 
 
