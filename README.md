@@ -8,7 +8,7 @@ A shopping list app simplifies the grocery shopping experience by providing a co
 >
  
 
-  <img scr="https://github.com/KunnikarB/shopping-app/assets/138579856/793239d4-2afe-4938-8dec-570fbf194efe">
+ 
   <br>
 
   <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/9df51620-bf8b-46ce-bb07-30b8cf56a6d0">
@@ -28,11 +28,12 @@ A shopping list app simplifies the grocery shopping experience by providing a co
 
 # Features
 
-
 - PropTypes method to ensure the correct datatype is passed for each prop.
 - Use localStorage to store data locally within a user's browser.
 - User authentication with email and password.
 - Private routes for authenticated users only.
+
+   <img scr="https://github.com/KunnikarB/shopping-app/assets/138579856/793239d4-2afe-4938-8dec-570fbf194efe">
 
 # Technologies Used
 
