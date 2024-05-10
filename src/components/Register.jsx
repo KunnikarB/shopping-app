@@ -25,7 +25,11 @@ import { useState } from "react";
     e.preventDefault();
     const users = await axios.get("http://localhost:6001/users").then((res) => checkEmail(res.data, email ));
 
-    
+    if (email === "" || password === "") {
+      alert("Please fill in all fields");
+      return;
+    }
+
     if (users) {
       alert("Email already exists!");
     } else {
