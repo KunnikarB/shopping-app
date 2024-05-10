@@ -12,20 +12,24 @@ import useLocalStorage from "use-local-storage";
 const Imovie = ({ movie }) => {
   const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=e6d2a710"
 
+  // Set up the state for the movies and the search term.
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
+  // Use the useEffect hook to search for movies when the component mounts.
   useEffect(() => {
     searchMovies({movie});
   }, []);
 
+  // Create an async function to fetch the data from the API 
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
-
+    // set the movies state to the data.Search array.
     setMovies(data.Search);
   };
 
+  // Use the useLocalStorage hook to set the theme preference in local storage.
   const preference = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [isDark, setIsDark] = useLocalStorage("isDark", preference);
 

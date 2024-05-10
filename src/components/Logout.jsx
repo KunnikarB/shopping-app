@@ -5,7 +5,9 @@ const Logout = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
+    // remove the user from local storage.
     localStorage.removeItem("user");
+    
     // navigate to the home page after logout.
     navigate("/Home ");
   };

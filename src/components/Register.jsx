@@ -5,8 +5,8 @@ import { Toggle } from "./Toggle";
 import axios from "axios";
 import { useState } from "react";
 
-// set username, email and password to empty strings using useState hook.
- const Register = () => {
+  // set username, email and password to empty strings using useState hook.
+  const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
