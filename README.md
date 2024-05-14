@@ -12,7 +12,7 @@ iShopping is a shopping list app simplifies the grocery shopping experience by p
 </div> 
 
   <br><br><br>
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/e4b00219-efe7-42e9-9c6b-7660c295aedb">
+ ![Landing-page](https://github.com/KunnikarB/shopping-app/assets/138579856/f8878502-4a54-4439-927d-b8501bfc79f2)
  <br> <br><br><br>
 
 # Features
@@ -24,10 +24,11 @@ iShopping is a shopping list app simplifies the grocery shopping experience by p
 - Private routes for authenticated users only.
   
 <br><br><br><br>
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/d86f7613-ec75-466c-baee-9fbc4a04d9d1">
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/50e0022f-fc3b-4e2b-b146-3c35da52c2b7)">
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/a599dd11-ab1b-4343-a84e-b69801cdf73c">
-  <img src="https://github.com/KunnikarB/shopping-app/assets/138579856/e7d09a22-d948-4240-8605-5b0f0aa5f40b">
+ ![register-page](https://github.com/KunnikarB/shopping-app/assets/138579856/50922cf8-ec6a-4836-8633-070a840a6feb)
+![login-page](https://github.com/KunnikarB/shopping-app/assets/138579856/0a8f8a18-dfce-48af-bad0-d58c914c4a84)
+![login](https://github.com/KunnikarB/shopping-app/assets/138579856/151be045-0e42-41da-9ae7-ca66d98c3f8b)
+
+![iMovie](https://github.com/KunnikarB/shopping-app/assets/138579856/e9c89557-c7ae-4e2a-ac12-916bde036ea6)
 <br><br><br><br>
 
 # Technologies Used
