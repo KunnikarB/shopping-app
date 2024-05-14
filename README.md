@@ -12,7 +12,9 @@ iShopping is a shopping list app simplifies the grocery shopping experience by p
 </div> 
 
   <br><br><br>
+  
  ![Landing-page](https://github.com/KunnikarB/shopping-app/assets/138579856/f8878502-4a54-4439-927d-b8501bfc79f2)
+ 
  <br> <br><br><br>
 
 # Features
@@ -25,10 +27,13 @@ iShopping is a shopping list app simplifies the grocery shopping experience by p
   
 <br><br><br><br>
  ![register-page](https://github.com/KunnikarB/shopping-app/assets/138579856/50922cf8-ec6a-4836-8633-070a840a6feb)
+ 
 ![login-page](https://github.com/KunnikarB/shopping-app/assets/138579856/0a8f8a18-dfce-48af-bad0-d58c914c4a84)
+
 ![login](https://github.com/KunnikarB/shopping-app/assets/138579856/151be045-0e42-41da-9ae7-ca66d98c3f8b)
 
 ![iMovie](https://github.com/KunnikarB/shopping-app/assets/138579856/e9c89557-c7ae-4e2a-ac12-916bde036ea6)
+
 <br><br><br><br>
 
 # Technologies Used
