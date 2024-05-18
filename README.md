@@ -1,5 +1,5 @@
 
-# iShopping & iMovie Application
+# Group Assignment: iShopping & iMovie Application
 
 
 iShopping is a shopping list app simplifies the grocery shopping experience by providing a convenient and organized way to create, manage shopping lists. User can register or loging to iMovie page.
